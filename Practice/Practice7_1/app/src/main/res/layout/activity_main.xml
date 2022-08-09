@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    /* 02 Kotlin 코드만 이용한 옵션 메뉴
+    직접 풀어보기7-1 */
+    /*
+    [실습7-1]을 다음과 같이 수정하라.
+    레이아웃은 RelativeLayout을 사용하고 텍스트뷰, 에디트텍스트, 이미지뷰를 적절히 배치한다.
+    에디터 텍스트에 각도를 입력하고 옵션 메뉴의 [그림 회전]을 선택하면 해당 각도만큼 이미지뷰가 회전한다.
+    한라산, 추자도, 범섬 옵션 메뉴는 라디오 버튼과 같이 3개 중 하나만 체크하고, 선택하면 이미지뷰가 해당 이미지로 바뀌게 한다.
+    (이미지나 이미지 이름이 달라도 된다.)
+    메뉴 XML에서 여러 항목을 묶으려면 <group>...</group>을 이용한다.
+    <group
+        android:checkableBehavior="single" >
+        <item
+            android:id="@+id/item1"
+            android:title="한라산"
+            android:checked="true" >
+        </item>
+    </group>
+    이미지뷰의 이미지를 변경하려면 setImageResource() 메소드를 사용한다.
+    */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="20202296 전채린"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="각도 입력"
+        android:layout_below="@+id/textView" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/item1"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/editText" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    /* 02 액티비티의 개요
+    직접풀어보기 10-1 새로운 액티비티 추가하기 */
+    /* [실습10-1]을 다음과 같이 수정하라.
+    ThirdActivity를 추가한다.
+    라디오버튼으로 선택된 액티비티가 나오게 한다.
+    */
+    /* 직접풀어보기 10-1 activity_main.xml */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20202296 전채린" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="첫 번째 화면" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdo2"
+            android:text="Second 액티비티" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdo3"
+            android:text="Third 액티비티" />
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNewActivity"
+        android:text="새 화면 열기" />
+</LinearLayout>

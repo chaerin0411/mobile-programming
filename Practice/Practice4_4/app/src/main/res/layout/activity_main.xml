@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    /* 02 이미지뷰와 이미지버튼
+    직접풀어보기4-4 안드로이드 버전 사진 보기 앱 만들기 */
+    /*
+    [실습 4-2]를 다음과 같이 수정하라.
+    '좋아하는 안드로이드 버전은?'으로 질문을 변경한다.
+    '시작함'을 Switch로 변경한다.
+    '선택 완료'를 없애고, 라디오버튼을 선택할 때마다 즉시 해당 이미지가 나오도록 변경한다.
+    마지막에 '종료'와 '처음으로'를 추가한다. '종료'를 클릭하면 응용프로그램이 완전히 종료되게 하고,
+    '처음으로를 클릭하면 다시 초기화되고 처음 화면이 나오게 한다
+    */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="선택을 시작하시겠습니까?" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkAgree"
+        android:text="시작함"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="좋아하는 안드로이드 버전은?"
+        android:visibility="invisible"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rGroup1"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/rdoOreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오레오(8.0)" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoPi"
+            android:text="파이(9.0)"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoQ"
+            android:text="Q(10.0)"/>
+    </RadioGroup>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPet"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnExit"
+        android:text="종료"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReset"
+        android:text="처음으로"
+        android:visibility="invisible"/>
+</LinearLayout>

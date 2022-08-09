@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    /* 02 복잡한 기능의 뷰 컨테이너
+    실습6-2 간단 웹브라우저 만들기 */
+    /*
+    에디트텍스트에 URL을 입력하면 해당 링크로 이동하는 앱 만들기
+    화면의 로고와 프로그램의 아이콘도 변경하기
+    */
+    /* 예제6-22 activity_main.xml */
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUrl"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="URL을 입력하세요." />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGo"
+            android:text="이동" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:text="이전" />
+    </LinearLayout>
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/webView1" />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    /* 03 그리드뷰
+    실습11-1 영화 포스터 보기 1 */
+    /* 그리드뷰를 이용하여 여러 사진(영화 포스터)을 격자 모양으로 배치
+    영화 포스터를 클릭하면 확대된 포스터가 대화상자로 표시 */
+    /* 예제11-6 activity_main.xml */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20202296 전채린" />
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView1"
+        android:gravity="center"
+        android:numColumns="4" />
+</LinearLayout>

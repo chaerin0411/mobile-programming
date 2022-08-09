@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    /* 02 이미지뷰와 이미지버튼
+    실습4-2 애완동물 사진 보기 앱 만들기 */
+    /*
+    애완동물의 사진을 출력하는 앱 만들기
+    '시작함'에 체크하면 좋아하는 애완동물 세 가지 중에서 하나를 선택하라는 내용이 나옴
+    선택 후에 '선택 완료' 버튼을 클릭하면 해당 애완동물의 이미지가 나타남
+    */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="선택을 시작하시겠습니까?" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkAgree"
+        android:text="시작함"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="좋아하는 애완동물은?"
+        android:visibility="invisible"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rGroup1"
+        android:visibility="invisible">
+        <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdoDog"
+        android:text="강아지" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoCat"
+            android:text="고양이"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoRabbit"
+            android:text="토끼"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOk"
+        android:text="선택 완료"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgPet"
+        android:visibility="invisible"/>
+</LinearLayout>

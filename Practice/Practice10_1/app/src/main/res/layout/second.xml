@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F0AE"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    /* 02 액티비티의 개요
+    직접풀어보기10-1 새로운 액티비티 추가하기 */
+    /* 직접풀어보기10-2 second.xml */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20202296 전채린" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="두 번째 화면" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReturn1"
+        android:text="돌아가기" />
+</LinearLayout>

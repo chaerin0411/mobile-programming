@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    /* 01 갤러리
+    실습11-2 영화 포스터 보기 2 */
+    /* [실습11-1]에서는 그리드뷰를 이용하여 작성한 영화 포스터 보기 앱을 이번에는 갤러리를 이용함
+    영화 포스터를 클릭하면 대화상자 대신 아래쪽 이미지뷰에 확대된 영화 포스터가 나옴 */
+    /* 예제11-12 activity_main.xml */
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20202296 전채린" />
+    <Gallery
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery1"
+        android:spacing="5dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPoster"
+        android:padding="20dp" />
+</LinearLayout>

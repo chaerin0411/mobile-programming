@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    /* 01 날짜와 시간 관련 위젯
+    예제6-4 타임피커와 데이트피커의 XML 코드 */
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height='match_parent'
+        android:timePickerMode="spinner" />
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:datePickerMode="spinner"/>
+</LinearLayout>
